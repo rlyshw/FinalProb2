@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="310.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.FormController">
+   <children>
+      <TextField fx:id="Gross" alignment="CENTER_RIGHT" layoutX="262.0" layoutY="14.0" onKeyTyped="#onlyNum" onKeyReleased="#updateVals" promptText="00.00" text="00.00" />
+      <Label layoutX="14.0" layoutY="20.0" text="Total Gross Income" />
+      <Label layoutX="250.0" layoutY="20.0" text="\$" />
+      <TextField fx:id="Debt" alignment="CENTER_RIGHT" layoutX="262.0" layoutY="62.0" />
+      <Label layoutX="14.0" layoutY="68.0" text="Total Monthly Debt" />
+      <Label layoutX="250.0" layoutY="68.0" text="\$" />
+      <TextField fx:id="Interest" alignment="CENTER_RIGHT" layoutX="390.0" layoutY="111.0" prefHeight="39.0" prefWidth="69.0" />
+      <Label layoutX="14.0" layoutY="117.0" text="Mortage Interest Rate" />
+      <Label layoutX="471.0" layoutY="117.0" text="\%" />
+      <ChoiceBox fx:id="Term" layoutX="262.0" layoutY="162.0" prefHeight="39.0" prefWidth="224.0" />
+      <Label layoutX="14.0" layoutY="168.0" text="Term" />
+      <Label layoutX="19.0" layoutY="219.0" text="Down Payment" />
+      <TextField fx:id="Down" alignment="CENTER_RIGHT" layoutX="262.0" layoutY="213.0" promptText="0000.00" />
+      <Label layoutX="250.0" layoutY="219.0" text="\$" />
+      <Button fx:id="Submit" layoutX="405.0" layoutY="257.0" mnemonicParsing="false" text="Submit" />
+      <Button fx:id="Clear" layoutX="14.0" layoutY="257.0" mnemonicParsing="false" text="Clear" />
+      <Separator layoutX="495.0" layoutY="14.0" orientation="VERTICAL" prefHeight="278.0" prefWidth="0.0" />
+      <Label layoutX="511.0" layoutY="20.0" text="House Payment" />
+      <Label layoutX="584.0" layoutY="68.0" text="+Obligations" />
+      <Label fx:id="HousePayment" layoutX="733.0" layoutY="20.0" text="00.00" />
+      <Label fx:id="WithObligations" layoutX="733.0" layoutY="68.0" text="00.00" />
+      <Label fx:id="WithObligations1" layoutX="698.0" layoutY="68.0" text="\$" />
+      <Label fx:id="WithObligations11" layoutX="698.0" layoutY="20.0" prefHeight="27.0" prefWidth="10.0" text="\$" />
+      <Label layoutX="511.0" layoutY="117.0" text="Max Payment Allowed" />
+      <Label fx:id="MaxAllowed" layoutX="732.0" layoutY="117.0" text="00.00" />
+      <Label fx:id="WithObligations111" layoutX="698.0" layoutY="117.0" prefHeight="27.0" prefWidth="10.0" text="\$" />
+      <Label layoutX="511.0" layoutY="168.0" text="Financeable" />
+      <Label fx:id="Financeable" layoutX="730.0" layoutY="168.0" text="00.00" wrapText="true" />
+      <Label fx:id="WithObligations1111" layoutX="695.0" layoutY="168.0" prefHeight="27.0" prefWidth="10.0" text="\$" />
+   </children>
+</AnchorPane>
